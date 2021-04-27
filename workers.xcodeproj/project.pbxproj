@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE27A2082648439A00C4965A /* ResgisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE27A2072648439A00C4965A /* ResgisterView.swift */; };
+		CE27A20C26484C5400C4965A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE27A20B26484C5400C4965A /* HealthKit.framework */; };
 		CEC9D7722633E7C9001F8CFB /* workersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9D7712633E7C9001F8CFB /* workersApp.swift */; };
 		CEC9D7742633E7C9001F8CFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9D7732633E7C9001F8CFB /* ContentView.swift */; };
 		CEC9D7762633E7CA001F8CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC9D7752633E7CA001F8CFB /* Assets.xcassets */; };
@@ -82,6 +84,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE27A2072648439A00C4965A /* ResgisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResgisterView.swift; sourceTree = "<group>"; };
+		CE27A20926484C5400C4965A /* workers WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "workers WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		CE27A20B26484C5400C4965A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		CEC9D76E2633E7C9001F8CFB /* workers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = workers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC9D7712633E7C9001F8CFB /* workersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workersApp.swift; sourceTree = "<group>"; };
 		CEC9D7732633E7C9001F8CFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,12 +140,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE27A20C26484C5400C4965A /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE27A20A26484C5400C4965A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE27A20B26484C5400C4965A /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CEC9D7652633E7C9001F8CFB = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +164,7 @@
 				CEC9D7972633E7CA001F8CFB /* workers WatchKit App */,
 				CEC9D7A32633E7CA001F8CFB /* workers WatchKit Extension */,
 				CEC9D76F2633E7C9001F8CFB /* Products */,
+				CE27A20A26484C5400C4965A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,6 +230,7 @@
 		CEC9D7A32633E7CA001F8CFB /* workers WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CE27A20926484C5400C4965A /* workers WatchKit Extension.entitlements */,
 				CEC9D7A42633E7CA001F8CFB /* workersApp.swift */,
 				CEC9D7A62633E7CB001F8CFB /* ContentView.swift */,
 				CEC9D7A82633E7CB001F8CFB /* NotificationController.swift */,
@@ -224,6 +240,7 @@
 				CEC9D7B32633E7CB001F8CFB /* Info.plist */,
 				CEC9D7B42633E7CB001F8CFB /* PushNotificationPayload.apns */,
 				CEC9D7B02633E7CB001F8CFB /* Preview Content */,
+				CE27A2072648439A00C4965A /* ResgisterView.swift */,
 			);
 			path = "workers WatchKit Extension";
 			sourceTree = "<group>";
@@ -454,6 +471,7 @@
 				CEC9D7A92633E7CB001F8CFB /* NotificationController.swift in Sources */,
 				CEC9D7A72633E7CB001F8CFB /* ContentView.swift in Sources */,
 				CEC9D7AD2633E7CB001F8CFB /* ComplicationController.swift in Sources */,
+				CE27A2082648439A00C4965A /* ResgisterView.swift in Sources */,
 				CEC9D7A52633E7CA001F8CFB /* workersApp.swift in Sources */,
 				CEC9D7AB2633E7CB001F8CFB /* NotificationView.swift in Sources */,
 			);
@@ -600,6 +618,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "workers WatchKit Extension/workers WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"workers WatchKit Extension/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -623,6 +642,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "workers WatchKit Extension/workers WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"workers WatchKit Extension/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
