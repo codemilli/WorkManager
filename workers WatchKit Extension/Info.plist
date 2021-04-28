@@ -32,6 +32,10 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
+	<key>NSHealthShareUsageDescription</key>
+	<string>Heart beat is needed for worker</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>Heart beat is needed for worker</string>
 	<key>WKRunsIndependentlyOfCompanionApp</key>
 	<true/>
 </dict>

@@ -621,6 +621,7 @@
 				CODE_SIGN_ENTITLEMENTS = "workers WatchKit Extension/workers WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"workers WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = E443AQF8J6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "workers WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -645,6 +646,7 @@
 				CODE_SIGN_ENTITLEMENTS = "workers WatchKit Extension/workers WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"workers WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = E443AQF8J6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "workers WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

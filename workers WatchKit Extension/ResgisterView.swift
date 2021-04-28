@@ -8,7 +8,6 @@ struct RegisterView: View {
             Text("Worker 3").tag(3)
             Text("Worker 4").tag(4)
         }
-        HKUnit
     }
 }
 
